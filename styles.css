@@ -1,0 +1,238 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #111;
+    color: #ddd;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 0;
+}
+
+#navbar {
+    background-color: #8B0000;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#navbar h1.logo {
+    font-size: 1.8em;
+    color: #fff;
+}
+
+#navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+#navbar ul li {
+    padding: 15px;
+}
+#navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    padding: 15px;
+}
+
+#navbar a:hover {
+    background-color: #b30000;
+}
+
+.section {
+    padding: 60px 0;
+    text-align: center;
+}
+#welcome-section, #about-section, #projects, #contact-section {
+    scroll-margin-top: 150px;
+}
+#welcome-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/bcb569da-ce7c-43e9-82bd-bc7bd0ae205b/deoctrq-c62439d2-fa31-401e-b59c-189003b73192.jpg/v1/fill/w_1155,h_692,q_70,strp/modern_black_background_by_colorsector_deoctrq-pre.jpg');
+    background-size: cover;
+    color: #ddd;
+    margin-top: 160px;
+}
+
+#welcome-section h1 {
+    font-size: 3em;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.project-tile {
+    background-color: #333;
+    border: 1px solid #555;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #8B0000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.project-link:hover {
+    background-color: #b30000;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+form input,
+form textarea {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    font-size: 1em;
+    background-color: #333;
+    color: #ddd;
+}
+
+button {
+    background-color: #8B0000;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #b30000;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.icon-link {
+    margin: 0 20px;
+    display: inline-block;
+}
+
+.icon-link img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon-link:hover img {
+    transform: scale(1.2);
+}
+
+textarea {
+    resize: none;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding-bottom: 0;
+    }
+
+    #navbar h1.logo {
+        font-size: 1.5em;
+        margin: 0 0 15px;
+    }
+
+    #navbar ul {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #navbar a {
+        margin: 5px 0;
+    }
+
+    .section {
+        padding: 40px 0;
+    }
+    #welcome-section, #about-section, #projects, #contact-section {
+        scroll-margin-top: 110px;
+    }
+    #welcome-section {
+        margin-top: 110px;
+    }
+
+    #welcome-section h1 {
+        font-size: 2em;
+    }
+
+    .subtitle {
+        font-size: 1.2em;
+    }
+
+    .project-tile {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .project-link {
+        margin-top: 15px;
+        padding: 10px 20px;
+    }
+
+    form label {
+        font-size: 1em;
+    }
+
+    form input,
+    form textarea {
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+
+    button {
+        padding: 12px 24px;
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+
+    .icon-link img {
+        width: 30px;
+        height: 30px;
+    }
+}
